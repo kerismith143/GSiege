@@ -1,8 +1,6 @@
 # GSiege
 Guild Wars 2 Automated WvW Siege Tool
 
-version - 1.5 (beta)
-
 Provides an automated method for operating siege weaponry within the Guild Wars 2 World vs. World environment and compatible maps. Currently supports the Flame Ram (with and without Mastery III), the Catapult, and the Trebuchet. Values can be directly modified in the GUI interface to tweak the settings. Settings autosave on exit for recovery on next run.
 
 The 1.5 version adds support for an AFK idle bot, expanded control over the bot, single fire options, and a simplified interface to abstract out the advanced settings. The default settings have been tweaked to account for some server lag when zergs are present, and the RNG has been expanded to provide a more robust solution for detection evasion.
