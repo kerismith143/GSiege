@@ -114,3 +114,9 @@ DWORD RandOffset(DWORD dwOrigValue, int nMilliseconds)
 	}
 	return dwNewValue;
 }
+
+// Generate a random single digit using different method to obfuscate static values like IDLEINTERVAL
+
+int ranum() {
+	return (((double)rand() / RAND_MAX) * 10);
+}
