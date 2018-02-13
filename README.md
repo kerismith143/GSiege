@@ -28,6 +28,14 @@ The program runs entirely within approximately 1MB worth of memory, and a strong
 
 **Releases:**
 
-tbd (v1.5 beta)
+tbd (v1.4 Current - July 7, 2014)
 
-tbd (v1.0 - 1.4)
+tbd (v1.3 - June 16, 2014)
+
+tbd (v1.2 - May 27, 2014)
+
+tbd (v1.1 - May 21, 2014)
+
+tbd (v1.0 - May 13, 2014)
+
+tbd (v1.5 beta)
