@@ -23,7 +23,7 @@ The 1.5 version adds support for an AFK idle bot, expanded control over the bot,
 
 The source code is provided open-source to allow the community to learn some of the methods for bypassing detection, as well as show some examples of automation tricks to better interact with 3rd-party software (low level keystroke injection, linked lists, etc.). The program is also written by hand entirely in C, and the interface has been streamlined for memory and speed efficiency. 
 
-The program runs entirely within approximately 1MB worth of memory, and a storng focus is placed on maintaining a minimal footprint. Binaries will be provided here, but if you do not trust them then you are welcome to compile the tool yourself. It is designed to be as close to a turnkey solution as possible. The free Visual Studio Community edition will quickly compile the program with ease. Just open the .sln file in Visual Studio, and press F7.
+The program runs entirely within approximately 1MB worth of memory, and a strong focus is placed on maintaining a minimal footprint. Binaries will be provided here, but if you do not trust them then you are welcome to compile the tool yourself. It is designed to be as close to a turnkey solution as possible. The free Visual Studio Community edition will quickly compile the program with ease. Just open the .sln file in Visual Studio, and press F7.
 
 
 **Releases:**
