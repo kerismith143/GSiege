@@ -26,14 +26,14 @@ The program runs entirely within approximately 1MB worth of memory, and a strong
 
 **Releases:**
 
-[GSiege v1.4](https://github.com/kerismith143/GSiegeArchive/blob/v1.4/GSiege.exe) (Current - July 7, 2014)
+[GSiege v1.4](https://github.com/kerismith143/GSiegeArchive/blob/v1.4/GSiege.exe) (Current - July 7, 2014 ElitePvpers)
 
-[GSiege v1.3](https://github.com/kerismith143/GSiegeArchive/blob/v1.3/GSiege.exe) (June 16, 2014)
+[GSiege v1.3](https://github.com/kerismith143/GSiegeArchive/blob/v1.3/GSiege.exe) (June 16, 2014 ElitePvpers)
 
-[GSiege v1.2](https://github.com/kerismith143/GSiegeArchive/blob/v1.2/GSiege.exe) (May 27, 2014)
+[GSiege v1.2](https://github.com/kerismith143/GSiegeArchive/blob/v1.2/GSiege.exe) (May 27, 2014 ElitePvpers)
 
-[GSiege v1.1](https://github.com/kerismith143/GSiegeArchive/blob/v1.1/GSiege.exe) (May 21, 2014)
+[GSiege v1.1](https://github.com/kerismith143/GSiegeArchive/blob/v1.1/GSiege.exe) (May 21, 2014 ElitePvpers)
 
-[GSiege v1.0](https://github.com/kerismith143/GSiegeArchive/blob/master/GSiege.exe) (May 13, 2014)
+[GSiege v1.0](https://github.com/kerismith143/GSiegeArchive/blob/master/GSiege.exe) (May 13, 2014 ElitePvpers)
 
-GSiege v1.5 (beta) TBD
+GSiege v1.5 (beta) TBD (GitHub)
