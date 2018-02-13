@@ -7,12 +7,12 @@ Currently supports the Flame Ram (with and without Mastery III), the Catapult, a
 
 The 1.5 version adds support for an AFK idle bot, expanded control over the bot, single fire options, and a simplified interface to abstract out the advanced settings. The default settings have been tweaked to account for some server lag when zergs are present, and the RNG has been expanded to provide a more robust solution for detection evasion.
 
-What this is:
+*What this is*:
 - A program to help you avoid hours of holding the 2 key to knock open Stonemist.
 - A program for helping you fire more accurate and consistent shots with trebs and cats.
 - A program for the enjoyment of watching automation tools.
 
-What this is NOT:
+*What this is* **NOT**:
 - An autowin tool for infinitrebbing while you sleep.
 - An arrow cart tool.
 - A shield generator tool.
