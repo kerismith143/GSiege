@@ -10,6 +10,22 @@
  *  add advanced settings support for changing Eject key injection
  */
 
+/*
+|========================================|
+| File Options About                     |
+|----------------------------------------|
+|   RAM  |  CAT   |  TREB   |  SETTINGS  |
+|----------------------------------------|
+|  [<[---:::------------------------]>]  |
+|                                        |
+|                            [  FIRE  ]  |
+|  [  START  ]  [  STOP  ]   [  EJECT ]  |
+|                                        |
+|  [___________________________] [send]  |
+|:: status...                          ::|
+|========================================|
+*/
+
 void SetWindowTopmost()
 {
 	if ( g_UserSettings.OnTop )
