@@ -124,9 +124,9 @@ DWORD IdleProc(LPVOID lpParams)
 			uint16_t nCount;
 			char *seed = "1ad";
 
-			// Send idle key from seed string to client
+			// Send idle key from seed string to client, ranum to obfuscate IDLEINTERVAL
 			SendKeys(hGuildWars, seed[(rand() % sizeof(seed))], RandOffset(1, MS_ENABLED));
-			for ( nCount = 0; nCount < IDLEINTERVAL; nCount++ )
+			for (nCount = 0; nCount < (IDLEINTERVAL + ranum()); nCount++)
 			{
 				if ( g_GlobalSettings.AFK_EXECUTE )
 					Sleep((rand() % 5) + 1000);
