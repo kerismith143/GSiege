@@ -100,9 +100,9 @@ void SaveSettings()
 }
 
 
-__inline uint8_t RandGen() { return (uint8_t)((rand() % 9) + 1); }
+uint8_t RandGen() { return (uint8_t)((rand() % 9) + 1); }
 
-__inline uint8_t RandSleep()
+uint8_t RandSleep()
 {
 	uint8_t r;
 	r = RandGen();
