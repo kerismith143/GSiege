@@ -98,19 +98,12 @@ void SaveSettings()
 		fclose(fp);
 	}
 }
+__inline uint8_t RandGen() { return (uint8_t)((rand() % 9) + 1); }
 
-// Generate a randomly incremented number based on the original value
-DWORD RandOffset(DWORD dwOrigValue, int nMilliseconds)
+__inline uint8_t RandSleep()
 {
-	DWORD dwNewValue;
-	int nMultiplier = 1; // MS_DISABLED
-
-	if ( nMilliseconds ) nMultiplier = 100;
-	srand((unsigned int)time(NULL));
-	dwNewValue = dwOrigValue;
-	if ( g_UserSettings.Offset )
-	{
-		dwNewValue += (((rand() % g_UserSettings.Offset)) * nMultiplier); // Variance by 5 units
-	}
-	return dwNewValue;
+	uint8_t r;
+	r = RandGen();
+	Sleep(r * 100);
+	return r;
 }
