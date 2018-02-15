@@ -1,6 +1,15 @@
 #ifndef __GSIEGE_GLOBALS_H__DQSWXD3CJ0F384VJFQ384J3V8J35__
 #define __GSIEGE_GLOBALS_H__DQSWXD3CJ0F384VJFQ384J3V8J35__
 
+// Hopefully, I know what I am doing. >:)
+#ifdef _MSC_VER
+	#define _CRT_SECURE_NO_WARNINGS // Disable warning for using non-secure versions of C functions in Visual Studio
+#endif
+
+/* remove if possible */
+#pragma comment(lib, "winmm.lib")
+/* remove if possible */
+
 // Guild Wars 2 main window class name
 #define FINDCLASS	"ArenaNet_Dx_Window_Class"
 #define GSIEGE_MAJOR_VERSION	1
