@@ -98,6 +98,8 @@ void SaveSettings()
 		fclose(fp);
 	}
 }
+
+
 __inline uint8_t RandGen() { return (uint8_t)((rand() % 9) + 1); }
 
 __inline uint8_t RandSleep()
