@@ -1,5 +1,14 @@
-#ifndef __GSIEGE_GLOBALS_H__
-#define __GSIEGE_GLOBALS_H__
+#ifndef __GSIEGE_GLOBALS_H__DQSWXD3CJ0F384VJFQ384J3V8J35__
+#define __GSIEGE_GLOBALS_H__DQSWXD3CJ0F384VJFQ384J3V8J35__
+
+// Hopefully, I know what I am doing. >:)
+#ifdef _MSC_VER
+	#define _CRT_SECURE_NO_WARNINGS // Disable warning for using non-secure versions of C functions in Visual Studio
+#endif
+
+/* remove if possible */
+#pragma comment(lib, "winmm.lib")
+/* remove if possible */
 
 // Guild Wars 2 main window class name
 #define FINDCLASS	"ArenaNet_Dx_Window_Class"
@@ -114,13 +123,14 @@ USERSETTINGS g_UserSettings;
 // Structure to pass to thread initialisation
 typedef struct tagTIMERPROCPARAMS
 {
-	int		nType; // Type of thread to initialise
+	int nType; // Type of thread to initialise
 } TIMERPROCPARAMS, *PTIMERPROCPARAMS, *LPTIMERPROCPARAMS;
 TIMERPROCPARAMS g_tpp; // Global thread initialisation type
 
-DWORD RandOffset(DWORD dwValue, int nUseMilliseconds); // Vary dwValue by 100-500 milliseconds randomly, or 1 to 5 seconds randomly
+uint8_t RandGen();
+uint8_t RandSleep();
 void SaveSettings();
 void LoadSettings();
 void ModifyEdits(HWND hWnd);
 
-#endif //__GSIEGE_GLOBALS_H__
+#endif __GSIEGE_GLOBALS_H__DQSWXD3CJ0F384VJFQ384J3V8J35__

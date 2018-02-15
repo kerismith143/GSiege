@@ -1,10 +1,8 @@
+// REMOVE THIS ENTIRE FILE
+// #include required headers directly into the affected file only
+// expand __GSIEGE_* definitions to include random unique strings
 #ifndef __GSIEGE_INCLUDES_HEADER__
 #define __GSIEGE_INCLUDES_HEADER__
-
-// Hopefully, I know what I am doing. >:)
-#ifdef _MSC_VER
-#define _CRT_SECURE_NO_WARNINGS // Disable warning for using non-secure versions of C functions in Visual Studio
-#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,7 +23,5 @@
 #include "SendKeysQue.h"
 #include "resource.h"
 #include "Globals.h"
-
-#pragma comment(lib, "winmm.lib")
 
 #endif //__GSIEGE_INCLUDES_HEADER__
