@@ -1,9 +1,16 @@
+#include <stdio.h>
 #include <windows.h>
 #include "resource.h"
 #include "Globals.h"
 #include "TabWindow.h"
 #include "Menu.h"
 #include "MainWindow.h"
+#include "FlameRam.h"
+#include "Catapult.h"
+#include "Trebuchet.h"
+#include "ChatWindow.h"
+#include "SendKeys.h"
+#include "SendKeysQue.h"
 
 void SetWindowTopmost()
 {

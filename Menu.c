@@ -1,4 +1,14 @@
-#include "includes.h"
+#include <stdio.h>
+#include <stdint.h>
+#include <windows.h>
+#include "Globals.h"
+#include "MainWindow.h"
+#include "TabWindow.h"
+#include "resource.h"
+#include "FlameRam.h"
+#include "Catapult.h"
+#include "Trebuchet.h"
+#include "Bot.h"
 
 void SetMenuState()
 {

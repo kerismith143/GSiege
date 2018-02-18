@@ -3,6 +3,8 @@
 #include <stdint.h>
 #include <windows.h>
 
+#pragma comment(lib, "winmm.lib")  // timeEndPeriod()/timeBeginPeriod() (deprecated, slotted for removal)
+
 // Guild Wars 2 main window class name
 #define FINDCLASS	"ArenaNet_Dx_Window_Class"
 #define GSIEGE_MAJOR_VERSION	1

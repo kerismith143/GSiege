@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdint.h>
 #include <windows.h>
 #include "Globals.h"
@@ -5,6 +6,8 @@
 #include "MainWindow.h"
 #include "TabWindow.h"
 #include "FlameRam.h"
+#include "Catapult.h"
+#include "Trebuchet.h"
 
 HWND hRechargeStatic;
 

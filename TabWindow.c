@@ -2,6 +2,9 @@
 #include "Globals.h"
 #include "TabWindow.h"
 #include "MainWindow.h"
+#include "FlameRam.h"
+#include "Catapult.h"
+#include "Trebuchet.h"
 
 char *lpszTabNames[] = {
 	"Flame Ram",

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <windows.h>
 #include "Globals.h"
+#include "SendKeys.h"
 #include "SendKeysQue.h"
 
 // Build initial list elements

@@ -1,9 +1,12 @@
+#include <stdio.h>
 #include <stdint.h>
 #include <windows.h>
 #include "Globals.h"
 #include "TabWindow.h"
+#include "SendKeys.h"
 #include "SendKeysQue.h"
 #include "MainWindow.h"
+#include "ChatWindow.h"
 
 WNDPROC oldChatProc;
 

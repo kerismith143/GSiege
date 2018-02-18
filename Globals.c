@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <windows.h>
+#include <time.h>
 #include "Globals.h"
 #include "Catapult.h"
 #include "FlameRam.h"

@@ -4,6 +4,14 @@
 #include <windows.h>
 #include "Globals.h"
 #include "SignalQue.h"
+#include "SendKeys.h"
+#include "SendKeysQue.h"
+#include "MainWindow.h"
+#include "TabWindow.h"
+#include "ChatWindow.h"
+#include "FlameRam.h"
+#include "Catapult.h"
+#include "Trebuchet.h"
 
 // Signal Que state counter
 static time_t StateCounter;

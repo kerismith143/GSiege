@@ -2,10 +2,10 @@
 #include "SignalQue.h"
 
 // Linked list structure
-typedef struct tagSignalQue
+typedef struct s_signal_que
 {
 	uint8_t Signal;
-	LPSIGNALQUE Next;
+	struct s_signal_que *Next;
 } SIGNALQUE, *PSIGNALQUE, *LPSIGNALQUE;
 LPSIGNALQUE lpSignalQueHead; // Linked list head pointer
 LPSIGNALQUE lpSignalQueTail; // Linked list tail pointer
