@@ -1,9 +1,13 @@
 #include "includes.h"
 
+// Signal queue state counter
 static time_t StateCounter;
 
 uint8_t SignalQueueProcessor()
 {
+	uint8_t SignalMask = 0;
+	uint8_t SIGNAL = 0;
+
 	// encapsulate the current state check to obfuscate the state update
 	{
 		time_t CurrentCounter;
@@ -30,7 +34,7 @@ uint8_t SignalQueueProcessor()
 	//     SignalMask |= SIGNAL_START;
 	//     SignalMask |= SIGNAL_STOP;
 	//     SignalMask |= INTERRUPT_EJECT;
-	//     SignalQueueRemoval(SignalMask);
+	//     SignalQueueRemove(SignalMask);
 	//     [...]
 
 	return 1;
