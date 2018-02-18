@@ -32,6 +32,9 @@ int g_nSBy; // deprecated, replace with local variable(s)
 #define SIGNAL_CHAT			0x04
 #define SIGNAL_FIRE			0x08
 #define INTERRUPT_EJECT		0x10
+#define SIGNAL_AFKSTART		0x20
+#define SIGNAL_AFKSTOP		0x40
+#define INTERRUPT_EXIT		0x80
 */
 
 
