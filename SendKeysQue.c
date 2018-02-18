@@ -1,4 +1,7 @@
-#include "includes.h"
+#include <stdio.h>
+#include <windows.h>
+#include "Globals.h"
+#include "SendKeysQue.h"
 
 // Build initial list elements
 struct send_que *SKQueInitialise(HWND hWnd, char *text)

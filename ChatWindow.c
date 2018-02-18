@@ -1,4 +1,9 @@
-#include "includes.h"
+#include <stdint.h>
+#include <windows.h>
+#include "Globals.h"
+#include "TabWindow.h"
+#include "SendKeysQue.h"
+#include "MainWindow.h"
 
 WNDPROC oldChatProc;
 

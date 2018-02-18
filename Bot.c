@@ -1,4 +1,8 @@
-#include "includes.h"
+#include <stdint.h>
+#include <windows.h>
+#include "Globals.h"
+#include "Bot.h"
+#include "TabWindow.h"
 
 #define SKPROCESS	   3 // Amount of buffer entries to process for SendKeysQue()
 

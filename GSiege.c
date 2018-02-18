@@ -1,4 +1,9 @@
-#include "includes.h"
+//#include "includes.h"
+#include <stdint.h>
+#include <time.h>
+#include <windows.h>
+#include "Globals.h"
+#include "SignalQueue.h"
 
 // Signal queue state counter
 static time_t StateCounter;

@@ -1,4 +1,10 @@
-#include "includes.h"
+#include <stdint.h>
+#include <windows.h>
+#include "Globals.h"
+#include "Bot.h"
+#include "MainWindow.h"
+#include "TabWindow.h"
+#include "Catapult.h"
 
 HWND hMinStatic, hMaxStatic, hOffsetStatic, hRechargeStatic;
 

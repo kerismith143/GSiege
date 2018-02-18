@@ -1,4 +1,10 @@
-#include "includes.h"
+#include <stdio.h>
+#include <stdint.h>
+#include <windows.h>
+#include "Globals.h"
+#include "Catapult.h"
+#include "FlameRam.h"
+#include "Trebuchet.h"
 
 void ModifyEdits(HWND hWnd)
 {

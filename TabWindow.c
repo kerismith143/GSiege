@@ -1,4 +1,7 @@
-#include "includes.h"
+#include <windows.h>
+#include "Globals.h"
+#include "TabWindow.h"
+#include "MainWindow.h"
 
 char *lpszTabNames[] = {
 	"Flame Ram",

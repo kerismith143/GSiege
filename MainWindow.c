@@ -1,4 +1,9 @@
-#include "includes.h"
+#include <windows.h>
+#include "resource.h"
+#include "Globals.h"
+#include "TabWindow.h"
+#include "Menu.h"
+#include "MainWindow.h"
 
 void SetWindowTopmost()
 {

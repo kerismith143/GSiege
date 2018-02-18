@@ -1,12 +1,13 @@
-#include "includes.h"
+#include <stdint.h>
+#include <windows.h>
 
 #define VKSC_UP		0x01 // Virtual Key Scan Code setting for toggling last known down state
 #define VKSC_SHIFT	0x01 // Virtual Key Scan Code for SHIFT key
 
 // Build LPARAM parameter for use in PostMessage with WM_KEYDOWN and WM_KEYUP messages
-UINT32 CreateLParam(USHORT nRepeatCount, CHAR vkScanCode, BOOL bDownBefore, BOOL bState)
+uint32_t CreateLParam(USHORT nRepeatCount, CHAR vkScanCode, BOOL bDownBefore, BOOL bState)
 {
-	UINT32 nValue = 0;
+	uint32_t nValue = 0;
 
 	nValue = nRepeatCount | (vkScanCode << 16); // Execution count and key scan code from VkKeyScan API
 	if ( bDownBefore ) nValue |= (VKSC_UP << 30);; // Last known state of key
