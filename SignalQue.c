@@ -8,42 +8,61 @@ typedef struct s_signal_que
 	struct s_signal_que *Next;
 } SIGNALQUE, *PSIGNALQUE, *LPSIGNALQUE;
 LPSIGNALQUE lpSignalQueHead; // Linked list head pointer
-LPSIGNALQUE lpSignalQueTail; // Linked list tail pointer
 
 // Initialise SignalQue
-uint8_t SignalQueInit()
+void SignalQueInit()
 {
-	lpSignalQueHead = NULL;
-	lpSignalQueTail = NULL;
-	return 0;
+	LPSIGNALQUE lpSignalQuePtr;
+
+	lpSignalQuePtr = (LPSIGNALQUE)malloc(sizeof(SIGNALQUE));
+	lpSignalQueHead = lpSignalQuePtr;
 }
 
 // Add SIGNAL to end of que
-uint8_t SignalQueSIG(uint8_t SIG)
+void SignalQueSIG(uint8_t SIG)
 {
-	return 0;
 }
 
 // Inject INTERRUPT to head of que
-uint8_t SignalQueINT(uint8_t INT)
+void SignalQueINT(uint8_t INT)
 {
-	return 0;
+	LPSIGNALQUE lpSignalQuePtr;
+
+	lpSignalQuePtr = (LPSIGNALQUE)malloc(sizeof(SIGNALQUE));
+	lpSignalQuePtr->Next = lpSignalQueHead; // Save current head state as next entry
+	lpSignalQuePtr->Signal = INT;
+	lpSignalQueHead = lpSignalQuePtr; // Update signal que state
 }
 
 // Remove matching signals from queue
-uint8_t SignalQueRemove()
+void SignalQueRemove(uint8_t SignalMask)
 {
-	return 0;
 }
 
 // Empty the que
-uint8_t SignalQueClearAll()
+void SignalQueClearAll()
 {
-	return 0;
+	unsigned long SignalAddr;
+	LPSIGNALQUE lpSignalQuePtr;
+
+	while ( lpSignalQueHead->Next != NULL )
+	{
+		lpSignalQuePtr = lpSignalQueHead->Next; // Save next index address
+		free(lpSignalQueHead); // Free head index memory
+		lpSignalQueHead = lpSignalQuePtr; // Move head index ptr to next index
+	}
 }
 
 // Get next que item
 uint8_t SignalQueNext()
 {
-	return 0;
+	uint8_t Signal;
+	LPSIGNALQUE lpSignalQuePtr;
+
+	Signal = lpSignalQueHead->Signal; // Save signal for return
+	lpSignalQuePtr = lpSignalQueHead->Next; // Save next index address
+	free(lpSignalQueHead); // Free head index memory
+	lpSignalQueHead = lpSignalQuePtr; // Move head index ptr to next index
+
+	return Signal;
 }

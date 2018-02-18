@@ -11,7 +11,7 @@
 #define SIGNAL_AFKSTOP		0x40
 #define INTERRUPT_EXIT		0x80
 
-uint8_t SignalQueInit(); // Initialise signal Que for processing
+void SignalQueInit(); // Initialise signal Que for processing
 uint8_t SignalQueSIG(uint8_t SIG); // Add SIGNAL to Que
 uint8_t SignalQueINT(uint8_t INT); // Add INTERRUPT to Que
 uint8_t SignalQueNext(); // Get next signal in que
