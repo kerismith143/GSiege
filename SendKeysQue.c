@@ -7,18 +7,20 @@
 // Build initial list elements
 struct send_que *SKQueInitialise(HWND hWnd, char *text)
 {
-	struct send_que *lpSendQuePtr = NULL;
+	struct send_que *lpSendQuePtr;
 	size_t len;
 
 	len = strlen(text);
 	if ( (len < 1) || (len > (SKDELIMMAX)) )
 		return NULL;
 
-	lpSendQuePtr = (struct send_que *)malloc(sizeof(struct send_que));
-	memset(lpSendQuePtr, 0, sizeof(struct send_que));
-	lpSendQuePtr->hWnd = hWnd;
-	memcpy(lpSendQuePtr->Text, text, len);
-	lpSendQueHead = lpSendQueCurrent = lpSendQuePtr;
+	if ( (lpSendQuePtr = (struct send_que *)malloc(sizeof(struct send_que))) != NULL )
+	{
+		memset(lpSendQuePtr, 0, sizeof(struct send_que));
+		lpSendQuePtr->hWnd = hWnd;
+		memcpy(lpSendQuePtr->Text, text, len);
+		lpSendQueHead = lpSendQueCurrent = lpSendQuePtr;
+	}
 	return lpSendQuePtr;
 }
 
@@ -128,7 +130,7 @@ int SKQueRemoveFirstElement()
 // Remove last element from linked list
 int SKQueRemoveLastElement()
 {
-	struct send_que *lpSendQueDel = NULL;
+	struct send_que *lpSendQueDel;
 	struct send_que *lpSendQuePrev = NULL;
 
 	lpSendQueDel = lpSendQueHead;

@@ -233,6 +233,7 @@
     <ClCompile Include="SignalQue.c" />
     <ClCompile Include="TabWindow.c" />
     <ClCompile Include="Trebuchet.c" />
+    <ClCompile Include="Update.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bot.h" />
@@ -240,7 +241,6 @@
     <ClInclude Include="ChatWindow.h" />
     <ClInclude Include="FlameRam.h" />
     <ClInclude Include="Globals.h" />
-    <ClInclude Include="includes.h" />
     <ClInclude Include="MainWindow.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="resource.h" />
@@ -249,6 +249,7 @@
     <ClInclude Include="SignalQue.h" />
     <ClInclude Include="TabWindow.h" />
     <ClInclude Include="Trebuchet.h" />
+    <ClInclude Include="Update.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GSiege.rc" />

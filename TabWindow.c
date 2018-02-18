@@ -31,6 +31,7 @@ int GetStartStop()
 
 	memset(buffer, 0, sizeof(buffer));
 	SendMessage(g_GlobalSettings.hRamStartButton, WM_GETTEXT, 0, (LPARAM)buffer);
+	buffer[sizeof(buffer)-1] = 0x00;
 	if ( !strcmp(buffer, "Stop") )
 		return 0;
 	return 1;

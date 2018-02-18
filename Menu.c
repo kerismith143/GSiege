@@ -128,20 +128,20 @@ int MenuCheckState(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 
 					memset(buffer, 0, sizeof(buffer));
 					_snprintf(buffer, sizeof(buffer)-1,
-						"%s\nCoded by: pushbyte\n\n" \
-						"1. Set whether you have Flame Ram Mastery III or greater.\n" \
-						"OR\n" \
-						"1. Set range (in seconds) for Catapult or Trebuchet, as desired, using the slider bar.\n" \
-						"\n2. Press Start button.\n" \
-						"\n\nAdvanced:\n" \
-						"-----------------------" \
-						"\nOffset is the maximum amount of time to wait randomly between skill usage. " \
-						"This feature is suggested for bypassing some simple detections.\n(Default: 5 nanoseconds)\n" \
-						"\nMinimum and Maximum values for Catapult and Trebuchet determine the valid range of values to fire within. " \
-						"This permits you to tweak the range settings from default.\n(Default: Catapult Max %lu, Trebuchet Max %lu)\n" \
-						"\nRecharge is the time to wait inbetween skill usage for each piece of siege.\n" \
+						"1. Set whether you have Flame Ram Mastery III or greater.\n"
+						"OR\n"
+						"1. Set range (in seconds) for Catapult or Trebuchet, as desired, using the slider bar.\n"
+						"\n2. Press Start button.\n"
+						"\n\nAdvanced:\n"
+						"-----------------------"
+						"\nOffset is the maximum amount of time to wait randomly between skill usage. "
+						"This feature is suggested for bypassing some simple detections.\n(Default: 5 nanoseconds)\n"
+						"\nMinimum and Maximum values for Catapult and Trebuchet determine the valid range of values to fire within. "
+						"This permits you to tweak the range settings from default.\n(Default: Catapult Max %lu, Trebuchet Max %lu)\n"
+						"\nRecharge is the time to wait inbetween skill usage for each piece of siege.\n"
 						"(Default: Ram Mastery %lu, No Ram Mastery %lu, Catapult/Trebuchet %lu)",
-						GSIEGE_VERSION_STRING, CATMAXRNG, TREBMAXRNG, RAMMASTER, RAMNOMASTER, CATTREB);
+						CATMAXRNG, TREBMAXRNG, RAMMASTER, RAMNOMASTER, CATTREB);
+					buffer[sizeof(buffer)-1] = 0x00;
 					MessageBox(NULL, buffer, "Help", MB_OK);
 				}
 				default:

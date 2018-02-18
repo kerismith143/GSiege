@@ -29,9 +29,9 @@ void SignalQueINT(uint8_t INT)
 {
 	LPSIGNALQUE lpSignalQuePtr;
 
-	lpSignalQuePtr = (LPSIGNALQUE)malloc(sizeof(SIGNALQUE));
+	lpSignalQuePtr = (LPSIGNALQUE)malloc(sizeof(SIGNALQUE)); // Allocate memory for list item
 	lpSignalQuePtr->Next = lpSignalQueHead; // Save current head state as next entry
-	lpSignalQuePtr->Signal = INT;
+	lpSignalQuePtr->Signal = INT; // Set list item signal
 	lpSignalQueHead = lpSignalQuePtr; // Update signal que state
 }
 
