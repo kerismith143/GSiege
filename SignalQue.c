@@ -1,4 +1,5 @@
 #include <stdint.h>
+#include <stdlib.h>
 #include "SignalQue.h"
 
 // Linked list structure
@@ -42,7 +43,6 @@ void SignalQueRemove(uint8_t SignalMask)
 // Empty the que
 void SignalQueClearAll()
 {
-	unsigned long SignalAddr;
 	LPSIGNALQUE lpSignalQuePtr;
 
 	while ( lpSignalQueHead->Next != NULL )
