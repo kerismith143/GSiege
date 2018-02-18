@@ -1,8 +1,46 @@
 #include "includes.h"
 
+static time_t StateCounter;
+
+uint8_t SignalQueueProcessor()
+{
+	// encapsulate the current state check to obfuscate the state update
+	{
+		time_t CurrentCounter;
+		CurrentCounter = time(NULL);
+		if ( StateCounter != CurrentCounter ) StateCounter = CurrentCounter;
+	}
+
+	// SIGNAL = SignalQueueNext();
+	// case ( SIGNAL )
+	// [...]
+
+	// case INTERRUPT_EJECT:
+	// {
+	//     SignalQueueRemove(SIGNAL_START);
+	//     SignalQueueRemove(SIGNAL_STOP);
+	//     SignalQueueRemove(INTERRUPT_EJECT);
+	//     [...]
+	
+	// OR
+
+	// if ( SIGNAL && INTERRUPT_EJECT )
+	// {
+	//     uint8_t SignalMask = 0x00;
+	//     SignalMask |= SIGNAL_START;
+	//     SignalMask |= SIGNAL_STOP;
+	//     SignalMask |= INTERRUPT_EJECT;
+	//     SignalQueueRemoval(SignalMask);
+	//     [...]
+
+	return 1;
+}
+
 int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 	MSG msg;
+
+	StateCounter = 0; // set StateCounter for signal queue initialisation
 
 	timeBeginPeriod(SLEEPMIN);
 	SKQueInit();

@@ -191,7 +191,7 @@ int CatapultFormBuilder()
 		WS_CHILD | SS_EDITCONTROL,
 		nSMinX, nRangeStaticY, nRangeStaticWidth, nRangeHeight,
 		g_GlobalSettings.hMainWindow, NULL, g_GlobalSettings.hInstance, NULL);
-	SendMessage(g_GlobalSettings.hCatMinEdit, EM_SETLIMITTEXT, (WPARAM)MAXRNG, 0);
+	SendMessage(g_GlobalSettings.hCatMinEdit, EM_SETLIMITTEXT, (WPARAM)MAX_EDIT_LEN, 0);
 	SendMessage(g_GlobalSettings.hCatMinEdit, WM_SETFONT, (WPARAM)g_GlobalSettings.hFont, 0);
 	SendMessage(g_GlobalSettings.hCatMinEdit, WM_SETTEXT, 0, (LPARAM)buffer);
 	SendMessage(hMinStatic, WM_SETFONT, (WPARAM)g_GlobalSettings.hFont, 0);
@@ -209,7 +209,7 @@ int CatapultFormBuilder()
 		WS_CHILD | SS_EDITCONTROL,
 		nSMaxX, nRangeStaticY, nRangeStaticWidth, nRangeHeight,
 		g_GlobalSettings.hMainWindow, NULL, g_GlobalSettings.hInstance, NULL);
-	SendMessage(g_GlobalSettings.hCatMaxEdit, EM_SETLIMITTEXT, (WPARAM)MAXRNG, 0);
+	SendMessage(g_GlobalSettings.hCatMaxEdit, EM_SETLIMITTEXT, (WPARAM)MAX_EDIT_LEN, 0);
 	SendMessage(g_GlobalSettings.hCatMaxEdit, WM_SETFONT, (WPARAM)g_GlobalSettings.hFont, 0);
 	SendMessage(g_GlobalSettings.hCatMaxEdit, WM_SETTEXT, 0, (LPARAM)buffer);
 	SendMessage(hMaxStatic, WM_SETFONT, (WPARAM)g_GlobalSettings.hFont, 0);
@@ -247,7 +247,7 @@ int CatapultFormBuilder()
 		WS_CHILD | SS_EDITCONTROL,
 		nRechargeStaticX, nRechargeStaticY, nRechargeStaticWidth, nRangeHeight,
 		g_GlobalSettings.hMainWindow, NULL, g_GlobalSettings.hInstance, NULL);
-	SendMessage(g_GlobalSettings.hCatRecharge, EM_SETLIMITTEXT, (WPARAM)MAXRNG, 0);
+	SendMessage(g_GlobalSettings.hCatRecharge, EM_SETLIMITTEXT, (WPARAM)MAX_EDIT_LEN, 0);
 	SendMessage(g_GlobalSettings.hCatRecharge, WM_SETFONT, (WPARAM)g_GlobalSettings.hFont, 0);
 	SendMessage(g_GlobalSettings.hCatRecharge, WM_SETTEXT, 0, (LPARAM)buffer);
 	SendMessage(hRechargeStatic, WM_SETFONT, (WPARAM)g_GlobalSettings.hFont, 0);

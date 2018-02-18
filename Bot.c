@@ -20,19 +20,19 @@ DWORD BotRam()
 			if ( n >= 3 )
 			{
 				n = 0; // Reset tick count
-				dwDuration += SendKeys(hGuildWars, '2', RandOffset(0, MS_ENABLED));
+				dwDuration += SendKeys(hGuildWars, '2', RandGen(DEF_RAND_BASE));
 			}
 
 			// Pause between skills
-			dwSleep = RandOffset(g_UserSettings.Offset, MS_ENABLED);
+			dwSleep = g_UserSettings.Offset + RandGen(DEF_RAND_BASE);
 			dwDuration += dwSleep;
 			Sleep(dwSleep);
 
 			// Use Ram(1) skill
-			dwDuration += SendKeys(hGuildWars, '1', RandOffset(0, MS_ENABLED));
+			dwDuration += SendKeys(hGuildWars, '1', RandGen(DEF_RAND_BASE));
 
 			// Sleep one iteration and increment tick count
-			dwSleep = RandOffset((g_UserSettings.RamMastery ? g_UserSettings.RamMastRecharge : g_UserSettings.RamNoMastRecharge), MS_ENABLED);
+			dwSleep = (g_UserSettings.RamMastery ? g_UserSettings.RamMastRecharge : g_UserSettings.RamNoMastRecharge) + RandGen(DEF_RAND_BASE);
 			dwDuration += dwSleep;
 			n++;
 			// Send SKPROCESS lines of text from SendQue

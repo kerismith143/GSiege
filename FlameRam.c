@@ -187,7 +187,7 @@ int FlameRamFormBuilder()
 		WS_CHILD | SS_EDITCONTROL,
 		nRechargeStaticX, nRechargeStaticY, nRechargeStaticWidth, nRechargeHeight,
 		g_GlobalSettings.hMainWindow, NULL, g_GlobalSettings.hInstance, NULL);
-	SendMessage(g_GlobalSettings.hRamRecharge, EM_SETLIMITTEXT, (WPARAM)MAXRNG, 0);
+	SendMessage(g_GlobalSettings.hRamRecharge, EM_SETLIMITTEXT, (WPARAM)MAX_EDIT_LEN, 0);
 	SendMessage(g_GlobalSettings.hRamRecharge, WM_SETFONT, (WPARAM)g_GlobalSettings.hFont, 0);
 	SendMessage(g_GlobalSettings.hRamRecharge, WM_SETTEXT, 0, (LPARAM)buffer);
 	SendMessage(hRechargeStatic, WM_SETFONT, (WPARAM)g_GlobalSettings.hFont, 0);

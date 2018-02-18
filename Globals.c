@@ -99,13 +99,35 @@ void SaveSettings()
 	}
 }
 
+// Generate a randomly incremented number based on the original value
+// deprecated, slotted for removal
+DWORD RandOffset(DWORD dwOrigValue, int nMilliseconds)
+{
+	DWORD dwNewValue;
+	int nMultiplier = 1; // MS_DISABLED
 
-uint8_t RandGen() { return (uint8_t)((rand() % 9) + 1); }
+	if ( nMilliseconds ) nMultiplier = 100;
+	srand((unsigned int)time(NULL));
+	dwNewValue = dwOrigValue;
+	if ( g_UserSettings.Offset )
+	{
+		dwNewValue += (((rand() % g_UserSettings.Offset)) * nMultiplier); // Variance by 5 units
+	}
+	return dwNewValue;
+}
 
-uint8_t RandSleep()
+// Generate a random number (default: 5 max)
+uint8_t RandGen(uint8_t nMax)
+{
+	if ( !nMax ) nMax = DEF_RAND_BASE;
+	return (uint8_t)((rand() % nMax) + 1);
+}
+
+// Sleep for random period (default: 5 max (500ms))
+uint8_t RandSleep(uint8_t nMax)
 {
 	uint8_t r;
-	r = RandGen();
+	r = RandGen(nMax);
 	Sleep(r * 100);
 	return r;
 }

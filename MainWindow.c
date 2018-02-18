@@ -1,31 +1,5 @@
 #include "includes.h"
 
-/*
- *  breakup Start/Stop button into Start, Stop, and Eject
- *  add Fire button
- *  remove Xns offset hack
- *  move status bar to bottom and expand
- *  move advanced settings off main bot panels
- *  resize main windows as-needed
- *  add advanced settings support for changing Eject key injection
- */
-
-/*
-|========================================|
-| File Options About                     |
-|----------------------------------------|
-|   RAM  |  CAT   |  TREB   |  SETTINGS  |
-|----------------------------------------|
-|  [<]---:::------------------------[>]  |
-|                                        |
-|                            [  FIRE  ]  |
-|  [  START  ]  [  STOP  ]   [  EJECT ]  |
-|                                        |
-|  [___________________________] [send]  |
-|:: status...                          ::|
-|========================================|
-*/
-
 void SetWindowTopmost()
 {
 	if ( g_UserSettings.OnTop )

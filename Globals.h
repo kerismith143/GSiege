@@ -1,14 +1,5 @@
-#ifndef __GSIEGE_GLOBALS_H__DQSWXD3CJ0F384VJFQ384J3V8J35__
-#define __GSIEGE_GLOBALS_H__DQSWXD3CJ0F384VJFQ384J3V8J35__
-
-// Hopefully, I know what I am doing. >:)
-#ifdef _MSC_VER
-	#define _CRT_SECURE_NO_WARNINGS // Disable warning for using non-secure versions of C functions in Visual Studio
-#endif
-
-/* remove if possible */
-#pragma comment(lib, "winmm.lib")
-/* remove if possible */
+#ifndef __GSIEGE_GLOBALS_H__
+#define __GSIEGE_GLOBALS_H__
 
 // Guild Wars 2 main window class name
 #define FINDCLASS	"ArenaNet_Dx_Window_Class"
@@ -22,22 +13,27 @@
 #define RAMNOMASTER	5750 // Wait time + offset for Flame Ram with Mastery II or lower
 #define CATTREB		5750 // Wait time + offset for Catapult and Trebuchet
 
-// Global Flame Ram handles
-
-// Trebuchet global window handles
-
-// Global Catapult tab handles
-
-int g_nSBy;
+int g_nSBy; // deprecated, replace with local variable(s)
 
 #define MAXTABS			3 // Maximum number of tabs to display
 #define GSIEGE_DAT		"GSiege.dat" // Name of settings file
 #define MAXTEXT			100 // Maximum number of characters for chat with NULL terminator
-#define MAXRNG			4
-#define RANDOFFSET		5
+#define MAX_EDIT_LEN	5
+#define RANDOFFSET		5 // deprecated, slotted for removal
+#define DEF_RAND_BASE	5
 #define MAINWIDTH		300
 #define MAINHEIGHT		210
 #define IDLEINTERVAL	180 // seconds between skill uses
+
+
+/*
+#define SIGNAL_START		0x01
+#define SIGNAL_STOP			0x02
+#define SIGNAL_CHAT			0x04
+#define SIGNAL_FIRE			0x08
+#define INTERRUPT_EJECT		0x10
+*/
+
 
 typedef struct tagGLOBALSETTINGS
 {
@@ -123,14 +119,15 @@ USERSETTINGS g_UserSettings;
 // Structure to pass to thread initialisation
 typedef struct tagTIMERPROCPARAMS
 {
-	int nType; // Type of thread to initialise
+	int		nType; // Type of thread to initialise
 } TIMERPROCPARAMS, *PTIMERPROCPARAMS, *LPTIMERPROCPARAMS;
 TIMERPROCPARAMS g_tpp; // Global thread initialisation type
 
-uint8_t RandGen();
-uint8_t RandSleep();
+DWORD RandOffset(DWORD dwValue, int nUseMilliseconds); // deprecated, slotted for removal
 void SaveSettings();
 void LoadSettings();
 void ModifyEdits(HWND hWnd);
+uint8_t RandGen(uint8_t nMax);
+uint8_t RandSleep(uint8_t nMax);
 
-#endif __GSIEGE_GLOBALS_H__DQSWXD3CJ0F384VJFQ384J3V8J35__
+#endif //__GSIEGE_GLOBALS_H__
