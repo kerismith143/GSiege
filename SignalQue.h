@@ -12,8 +12,8 @@
 #define INTERRUPT_EXIT		0x80
 
 void SignalQueInit(); // Initialise signal Que for processing
-uint8_t SignalQueSIG(uint8_t SIG); // Add SIGNAL to Que
-uint8_t SignalQueINT(uint8_t INT); // Add INTERRUPT to Que
+void SignalQueSIG(uint8_t SIG); // Add SIGNAL to Que
+void SignalQueINT(uint8_t INT); // Add INTERRUPT to Que
 uint8_t SignalQueNext(); // Get next signal in que
 
 #endif //__GSIEGE_SIGNALQUE_H__CMCN439HFXCM934MHFQ92384H9C__
