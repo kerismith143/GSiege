@@ -5,6 +5,7 @@
 #include "Catapult.h"
 #include "FlameRam.h"
 #include "Trebuchet.h"
+#include "SignalQue.h"
 
 void ModifyEdits(HWND hWnd)
 {

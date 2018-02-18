@@ -26,16 +26,7 @@ int g_nSBy; // deprecated, replace with local variable(s)
 #define IDLEINTERVAL	180 // seconds between skill uses
 
 
-/*
-#define SIGNAL_START		0x01
-#define SIGNAL_STOP			0x02
-#define SIGNAL_CHAT			0x04
-#define SIGNAL_FIRE			0x08
-#define INTERRUPT_EJECT		0x10
-#define SIGNAL_AFKSTART		0x20
-#define SIGNAL_AFKSTOP		0x40
-#define INTERRUPT_EXIT		0x80
-*/
+
 
 
 typedef struct tagGLOBALSETTINGS

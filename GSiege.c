@@ -3,12 +3,12 @@
 #include <time.h>
 #include <windows.h>
 #include "Globals.h"
-#include "SignalQueue.h"
+#include "SignalQue.h"
 
-// Signal queue state counter
+// Signal Que state counter
 static time_t StateCounter;
 
-uint8_t SignalQueueProcessor()
+uint8_t SignalQueProcessor()
 {
 	uint8_t SignalMask = 0;
 	uint8_t SIGNAL = 0;
@@ -20,15 +20,15 @@ uint8_t SignalQueueProcessor()
 		if ( StateCounter != CurrentCounter ) StateCounter = CurrentCounter;
 	}
 
-	// SIGNAL = SignalQueueNext();
+	// SIGNAL = SignalQueNext();
 	// case ( SIGNAL )
 	// [...]
 
 	// case INTERRUPT_EJECT:
 	// {
-	//     SignalQueueRemove(SIGNAL_START);
-	//     SignalQueueRemove(SIGNAL_STOP);
-	//     SignalQueueRemove(INTERRUPT_EJECT);
+	//     SignalQueRemove(SIGNAL_START);
+	//     SignalQueRemove(SIGNAL_STOP);
+	//     SignalQueRemove(INTERRUPT_EJECT);
 	//     [...]
 	
 	// OR
@@ -39,7 +39,7 @@ uint8_t SignalQueueProcessor()
 	//     SignalMask |= SIGNAL_START;
 	//     SignalMask |= SIGNAL_STOP;
 	//     SignalMask |= INTERRUPT_EJECT;
-	//     SignalQueueRemove(SignalMask);
+	//     SignalQueRemove(SignalMask);
 	//     [...]
 
 	return 1;
@@ -49,7 +49,7 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 {
 	MSG msg;
 
-	StateCounter = 0; // set StateCounter for signal queue initialisation
+	StateCounter = 0; // set StateCounter for signal Que initialisation
 
 	timeBeginPeriod(SLEEPMIN);
 	SKQueInit();
