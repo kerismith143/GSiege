@@ -1,5 +1,6 @@
-#ifndef __GSIEGE_SENDKEYSQUE_H__
-#define __GSIEGE_SENDKEYSQUE_H__
+#ifndef __GSIEGE_SENDKEYSQUE_H__TY7H4JFD938KUZ92XCN48H87J__
+#define __GSIEGE_SENDKEYSQUE_H__TY7H4JFD938KUZ92XCN48H87J__
+#include <windows.h>
 
 #define SKCHARMAX		99
 #define SKDELIMMAX		SKCHARMAX  + 2	// Leading and trailing \n
@@ -30,4 +31,4 @@ int SendKeysQueAdd(HWND hWnd, char *text);
 DWORD SendKeysQue();
 void SKQueInit();
 
-#endif //__GSIEGE_SENDKEYSQUE_H__
+#endif //__GSIEGE_SENDKEYSQUE_H__TY7H4JFD938KUZ92XCN48H87J__

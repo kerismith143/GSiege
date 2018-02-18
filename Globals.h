@@ -1,5 +1,7 @@
-#ifndef __GSIEGE_GLOBALS_H__
-#define __GSIEGE_GLOBALS_H__
+#ifndef __GSIEGE_GLOBALS_H__HVCHMX3J83CJV8745CHX9X43CJ__
+#define __GSIEGE_GLOBALS_H__HVCHMX3J83CJV8745CHX9X43CJ__
+#include <stdint.h>
+#include <windows.h>
 
 // Guild Wars 2 main window class name
 #define FINDCLASS	"ArenaNet_Dx_Window_Class"
@@ -124,4 +126,4 @@ void ModifyEdits(HWND hWnd);
 uint8_t RandGen(uint8_t nMax);
 uint8_t RandSleep(uint8_t nMax);
 
-#endif //__GSIEGE_GLOBALS_H__
+#endif //__GSIEGE_GLOBALS_H__HVCHMX3J83CJV8745CHX9X43CJ__

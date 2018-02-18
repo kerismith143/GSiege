@@ -1,5 +1,6 @@
-#ifndef __GSIEGE_BOT_HEADER__
-#define __GSIEGE_BOT_HEADER__
+#ifndef __GSIEGE_BOT_HEADER__VMHNG8H7G9MC9Q2JU43XM8U3C498TCR__
+#define __GSIEGE_BOT_HEADER__VMHNG8H7G9MC9Q2JU43XM8U3C498TCR__
+#include <windows.h>
 
 // Millisecond calculations for RandOffset
 #define MS_DISABLED	0 // Use whole second calculations
@@ -14,4 +15,4 @@
 DWORD TimerProc(LPVOID lpParams); // Thread procedure handler
 DWORD IdleProc(LPVOID lpParams); // Thread idle procedure handler
 
-#endif //__GSIEGE_BOT_HEADER__
+#endif //__GSIEGE_BOT_HEADER__VMHNG8H7G9MC9Q2JU43XM8U3C498TCR__

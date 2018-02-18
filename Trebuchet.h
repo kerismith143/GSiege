@@ -1,5 +1,6 @@
-#ifndef __GSIEGE_TREBUCHET_HEADER__
-#define __GSIEGE_TREBUCHET_HEADER__
+#ifndef __GSIEGE_TREBUCHET_HEADER__TRF87YD3JES21IAOS03DKUJFV__
+#define __GSIEGE_TREBUCHET_HEADER__TRF87YD3JES21IAOS03DKUJFV__
+#include <windows.h>
 
 // Range definitions for Trebuchet
 #define TREBMAXRNG	810
@@ -10,4 +11,4 @@ int TrebuchetHideElements(); // Hide all trebuchet elements
 void TrebuchetToggleElements(); // Toggle showing and hiding of tebuchet elements
 void TrebuchetCheckState(HWND hWnd); // Process messages from main window procedure
 
-#endif //__GSIEGE_TREBUCHET_HEADER__
+#endif //__GSIEGE_TREBUCHET_HEADER__TRF87YD3JES21IAOS03DKUJFV__

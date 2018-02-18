@@ -1,5 +1,6 @@
-#ifndef __GSIEGE_CATAPULT_HEADER__
-#define __GSIEGE_CATAPULT_HEADER__
+#ifndef __GSIEGE_CATAPULT_HEADER__CXKHM57GNHVC4JX983CQ4H58VGHC__
+#define __GSIEGE_CATAPULT_HEADER__CXKHM57GNHVC4JX983CQ4H58VGHC__
+#include <windows.h>
 
 // Catapult precision range levels for Scrollbar
 #define CATMAXRNG	380
@@ -10,4 +11,4 @@ int CatapultHideElements(); // Hide Catapult tab elements
 void CatapultToggleElements(); // Toggle Catapult tab elements between show and hide
 void CatapultCheckState(HWND hWnd); // Handle Catapult WM_COMMAND messages
 
-#endif //__GSIEGE_CATAPULT_HEADER__
+#endif //__GSIEGE_CATAPULT_HEADER__CXKHM57GNHVC4JX983CQ4H58VGHC__
