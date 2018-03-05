@@ -9,5 +9,8 @@
 - Add Ctrl+A/C/V to send chat.
 - Add / command support and chat selector.
 - Add auto-update.
+- Add Start/Stop/Eject/Fire
+- Add status bar.
+- Remove Xns and replace with RandSleep().
 
 *keri*
