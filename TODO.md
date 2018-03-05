@@ -6,5 +6,6 @@
 - Add interrupt queue
 - Simplify the SendKeys() and SendKeysQueue() functions
 - Expand linked list function support (list item count, removal by index, et al.)
+- Add Ctrl+A/C/V to send chat.
 
 *keri*
