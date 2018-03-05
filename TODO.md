@@ -1,20 +1,25 @@
 # TODO
 
+RandGen()/RandSleep()
 - Replace random generators with `uint8_t RandGen();` and `uint8_t RandSleep();`
 - Remove Xns and replace with RandSleep().
-'
+
+Signal Queue/LinkedList
 - Replace current thread/signal system for single-thread operation
 - Add interrupt queue
-'
-- Simplify the SendKeys() and SendKeysQueue() functions
 - Expand linked list function support (list item count, removal by index, et al.)
-'
+
+Chat/Keystroke Handler
+- Simplify the SendKeys() and SendKeysQueue() functions
 - Add Ctrl+A/C/V to send chat.
-- Add / command support and chat selector.
-'
-- Add auto-update.
-'
+- Add / command support and chat selector
+
+User Interface
 - Add Start/Stop/Eject/Fire
-- Add status bar.
-'
+- Add status bar
+
+Functionality
+- Add auto-update
+- Fix idle bot
+
 *keri*
