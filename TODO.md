@@ -14,9 +14,6 @@ Chat/Keystroke Handler
 - Add Ctrl+A/C/V to send chat.
 - Add / command support and chat selector
 
-Bot Controller
-- Set 100% to hold key instead of reset.
-
 User Interface
 - Add Start/Stop/Eject/Fire
 - Add status bar
