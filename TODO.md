@@ -17,9 +17,11 @@ Chat/Keystroke Handler
 User Interface
 - Add Start/Stop/Eject/Fire
 - Add status bar
+- Add multi-client selector
 
 Functionality
 - Add auto-update
 - Fix idle bot
+- Add multi-client support
 
 *keri*
